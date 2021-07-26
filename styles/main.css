@@ -49,6 +49,11 @@
   text-align: center;
 }
 
+.split-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .btm-margin {
   margin-bottom: 1em;
 }
