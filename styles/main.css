@@ -1,7 +1,83 @@
+:root {
+  --color-header: #dbeeff;
+  --color-top-article: #4c566a;
+  --color-bottom-artcle: #353b3c;
+  --color-base: #edf6ff;
+
+  --font-header: "Courier New", Courier, monospace;
+  --font-fancy: "Lobster", cursive;
+  --font-main: Arial, Helvetica, sans-serif;
+}
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.bg-header {
+  background-color: var(--color-header);
+}
+
+.header-color {
+  color: var(--color-header);
+}
+
+.heading {
+  max-width: 35rem;
+  margin-inline: auto;
+}
+
+.bg-top-article {
+  background-color: var(--color-top-article);
+  color: var(--color-base);
+}
+
+.bg-bottom-article {
+  background-color: var(--color-bottom-artcle);
+  color: var(--color-base);
+}
+
+.container {
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+}
+
+.center-text {
+  text-align: center;
+}
+
+.btm-margin {
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-family: var(--font-fancy);
+  font-weight: 800;
+  line-height: 1;
+  color: var(--color-bottom-artcle);
+}
+
+h2 {
+  font-family: var(--font-header);
+  font-weight: 700;
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+header,
+section {
+  padding: 3rem 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
