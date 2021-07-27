@@ -54,6 +54,20 @@
   flex-direction: column;
 }
 
+@media (min-width: 34.75em) {
+  .split-container {
+    flex-direction: row;
+  }
+
+  .split-container > * {
+    flex-basis: 100%;
+  }
+
+  .lt-margin {
+    margin-left: 2em;
+  }
+}
+
 .btm-margin {
   margin-bottom: 1em;
 }
